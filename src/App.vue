@@ -1,32 +1,52 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Navbar></Navbar>
+    <div class="container mx-auto">
+      <!-- Mega Menu -->
+      <!--<div class="relative">
+        <a href class>Megamenu</a>
+        <div
+          class="absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4" style=" left: -60px"
+        >
+          <div class="flex px-8 py-6 border-b -mx-4">
+            <div class="w-1/2 px-4">
+              lorem ipsum
+            </div>
+            <div class="w-1/2 px-4">
+              lorem ipsum
+            </div>
+          </div>
+          <ul class=" bg-gray-100 px-8 py-8">
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+          </ul>
+
+        </div>
+      </div>-->
+      <router-view />
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+  import Navbar from '../src/components/Navbar'
+  export default {
+    data(){
+      return{
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+      }
+    },
+    components:{
+      Navbar
     }
+
   }
-}
+</script>
+
+<style lang="scss">
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 </style>
