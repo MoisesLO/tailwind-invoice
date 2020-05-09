@@ -7,7 +7,7 @@
       >
         <div class="flex justify-between items-center">
           <a href="#" class="inline-block py-2 text-white text-xl font-bold"
-          >Demopay</a
+          >Lineysoft.com</a
           >
           <div
               class="inline-block cursor-pointer md:hidden">
@@ -22,17 +22,17 @@
             <a
                 href="#"
                 class="inline-block py-1 md:py-4 text-gray-100 mr-6 font-bold"
-            >How it Works</a
+            >Como funciona?</a
             >
             <a
                 href="#"
                 class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
-            >Services</a
+            >Precios</a
             >
             <a
                 href="#"
                 class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100"
-            >Blog</a
+            >Contacto</a
             >
           </div>
         </div>
@@ -40,12 +40,12 @@
           <a
               href="#"
               class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
-          >Login</a
+          >Entrar</a
           >
           <a
               href="#"
               class="inline-block py-2 px-4 text-gray-700 bg-white hover:bg-gray-100 rounded-lg"
-          >Sign Up</a
+          >Registrate</a
           >
         </div>
       </div>
@@ -59,7 +59,7 @@
               <h1
                   class="font-bold text-white text-2xl md:text-5xl leading-tight mb-4"
               >
-                Simple payment platform for any service
+                Facturacion electronica para tu empresa
               </h1>
 
               <p class="text-indigo-200 md:text-xl md:pr-48">
@@ -113,7 +113,7 @@
                   </div>
 
                   <div class="text-gray-800 text-center">
-                    Online <br />Services
+                    Online <br/>Services
                   </div>
                 </div>
 
@@ -178,7 +178,7 @@
                   </div>
 
                   <div class="text-gray-800 text-center">
-                    Payment for <br />Internet
+                    Payment for <br/>Internet
                   </div>
                 </div>
 
@@ -520,7 +520,7 @@
                 </div>
 
                 <div class="text-gray-800 text-center text-sm">
-                  Payment for <br />Internet
+                  Payment for <br/>Internet
                 </div>
               </div>
             </div>
@@ -555,10 +555,10 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+  // @ is an alias to /src
+  // import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'Home'
-}
+  export default {
+    name: 'Home'
+  }
 </script>
