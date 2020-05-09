@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Navbar></Navbar>
-    <div class="container mx-auto">
+    <!--<Navbar></Navbar>-->
+
       <!-- Mega Menu -->
       <!--<div class="relative">
         <a href class>Megamenu</a>
@@ -26,7 +26,7 @@
         </div>
       </div>-->
       <router-view />
-    </div>
+
   </div>
 </template>
 
