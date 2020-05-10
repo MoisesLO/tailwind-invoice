@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
-    <!--<Navbar></Navbar>-->
+  <div id="app">    
+    <Navbar v-if="layout=='admin'"></Navbar>
 
-      <!-- Mega Menu -->
-      <!--<div class="relative">
+    <!-- Mega Menu -->
+    <!--<div class="relative">
         <a href class>Megamenu</a>
         <div
           class="absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4" style=" left: -60px"
@@ -24,29 +24,50 @@
           </ul>
 
         </div>
-      </div>-->
-      <router-view />
-
+    </div>-->
+    <router-view />
   </div>
 </template>
 
 <script>
-  import Navbar from '../src/components/Navbar'
-  export default {
-    data(){
-      return{
-
-      }
-    },
-    components:{
-      Navbar
+import Navbar from "../src/components/Navbar";
+export default {
+  data() {
+    return {
+      layout: ''
     }
-
-  }
+  },
+  methods: {
+    GetCurrentRoute(){
+      if(this.$router.currentRoute.path == '/'){
+        this.layout = '';
+      }else{
+        this.layout = 'admin';
+      }
+      console.log(this.$router.currentRoute.path);
+    }
+  },
+  components: {
+    Navbar
+  },
+  watch: {
+    '$route'(value) {
+      if(value.path == '/'){
+        this.layout = '';        
+      }else{
+        this.layout = 'admin';
+      }      
+      console.log(value.path);
+    }
+  },
+  mounted(){
+    this.GetCurrentRoute();
+  }  
+};
 </script>
 
 <style lang="scss">
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 </style>
