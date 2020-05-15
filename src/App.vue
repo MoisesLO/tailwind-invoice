@@ -15,7 +15,11 @@ export default {
   },
   methods: {
     GetCurrentRoute(){
-      if(this.$router.currentRoute.path == '/' || this.$router.currentRoute.path == '/curve' || this.$router.currentRoute.path == '/home'){
+      if(this.$router.currentRoute.path == '/' || 
+        this.$router.currentRoute.path == '/curve' || 
+        this.$router.currentRoute.path == '/home' ||
+        this.$router.currentRoute.path == '/login'
+      ){
         this.layout = '';
       }else{
         this.layout = 'admin';
@@ -28,7 +32,12 @@ export default {
   },
   watch: {
     '$route'(value) {
-      if(value.path == '/' || value.path == '/curve' || value.path == '/home'){
+      if(
+        value.path == '/' || 
+        value.path == '/curve' || 
+        value.path == '/home' ||
+        value.path == '/login'
+      ){
         this.layout = '';        
       }else{
         this.layout = 'admin';

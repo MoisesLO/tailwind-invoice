@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-auto">
+  <div>
     <!-- Menu Header -->
     <nav class="py-8">
       <div class="mx-auto flex justify-between justify-center  max-w-screen-lg">
@@ -22,7 +22,7 @@
         <div>
           <ul class="flex">
             <li>
-              <router-link to="/" class=" font-medium text-gray-600 hover:text-gray-900">Login</router-link>
+              <router-link to="/login" class=" font-medium text-gray-600 hover:text-gray-900">Login</router-link>
             </li>
             <li class="ml-6">
               <router-link to="/" class=" px-5 py-2 border border-transparent text-base leading-6 font-medium
