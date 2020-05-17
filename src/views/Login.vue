@@ -1,12 +1,15 @@
 <template>
-  <div class=" bg-gray-100 min-h-screen">    
-    
-    <div class="mx-auto w-full max-w-md h-full pt-24 ">
-
-      <h1 class="text-center text-2xl text-gray-600 pb-5">Lineysoft <span class=" text-xs">.com</span></h1>
+  <div class="bg-gray-100 min-h-screen">
+    <div class="mx-auto w-full max-w-md h-full pt-24">
+      <div class="text-center mb-5">
+        <router-link to="/" class="text-2xl text-gray-600  text-center">
+          Lineysoft
+          <span class="text-xs">.com</span>
+        </router-link>
+      </div>
 
       <form class="shadow-md rounded px-8 py-6 mb-4 bg-white">
-        <p class=" text-base text-gray-600">Coloca tu Usuario y contrasena</p>
+        <p class="text-base text-gray-600">Coloca tu Usuario y contrasena</p>
         <div class="mb-6 mt-6">
           <label class="block text-gray-600 text-sm font-bold mb-2" for="username">Usuario:</label>
           <input
@@ -28,15 +31,16 @@
           />
           <!--<p class="text-red-500 text-xs italic">Please choose a password.</p>-->
         </div>
-        <div class="">
-          <button
-            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 
-            rounded focus:outline-none focus:shadow-outline w-full"
-            type="button">Entrar →</button>
-          <div class=" pt-5 text-center text-xs text-gray-500">
-            No tienes una cuenta ? Registrate ahora.
-          </div>
-          
+        <div class>
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 
+          rounded focus:outline-none focus:shadow-outline w-full"
+          @click="GetLogin()"
+          type="button">
+            Entrar →
+          </button>
+          <div
+            class="pt-5 text-center text-xs text-gray-500"
+          >No tienes una cuenta ? Registrate ahora.</div>
         </div>
       </form>
       <p class="text-center text-gray-500 text-xs">&copy;2020 Acme Corp. All rights reserved.</p>
@@ -53,6 +57,11 @@ export default {
         password: "demo1234556"
       }
     };
+  },
+  methods: {
+    GetLogin(){
+      this.$router.push('/admin')
+    }
   }
 };
 </script>

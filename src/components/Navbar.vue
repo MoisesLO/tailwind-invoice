@@ -1,5 +1,5 @@
 <template>
-  <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+  <header class="bg-gray-100 lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2">
     <div class="flex-1 flex justify-between items-center">
       <router-link to="/">
         <svg width="32" height="36" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">

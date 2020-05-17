@@ -40,7 +40,7 @@
     <!-- End Menu Header -->
 
     <div class="mt-10 mx-auto max-w-screen-lg pt-20">
-      <h1 class=" text-center text-3xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-4xl sm:leading-none md:text-5xl">
+      <h1 class=" text-center leading-6 text-3xl tracking-tight leading-10 text-gray-900 sm:text-4xl leading-none md:text-5xl">
         Facturacion Electronica
         <span class=" text-indigo-700">simple y sensillo para tu empresa</span>
       </h1>
